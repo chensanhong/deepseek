@@ -1,4 +1,4 @@
-import { DeepSeek } from 'deepseek-core'; // 或你自己封装的 API
+// DeepSeek 核心模块已移除，当前直接使用 fetch 调用官方 API
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
