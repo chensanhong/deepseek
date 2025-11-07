@@ -48,4 +48,3 @@ async function sendMessage(message) {
   messages.innerHTML += `<div><strong>你：</strong> ${message}</div>`;
   messages.innerHTML += `<div><strong>AI：</strong> ${data.reply}</div>`;
 }
-ajsdi
