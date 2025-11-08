@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // DeepSeek 核心模块已移除，当前直接使用 fetch 调用官方 API
 
 export default async function handler(req, res) {
@@ -33,3 +34,10 @@ export default async function handler(req, res) {
     res.status(500).json({ error: 'Failed to get response from DeepSeek' });
   }
 }
+=======
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
+export default function handler(req, res) {
+  res.status(200).json({ name: "John Doe" });
+}
+>>>>>>> eddf4776325f77fb5bf7106ec8203707d7325aff
