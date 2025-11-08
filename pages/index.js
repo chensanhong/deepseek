@@ -1,3 +1,55 @@
+<<<<<<< HEAD
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>DeepSeek 聊天助手</title>
+        <meta name="description" content="基于 DeepSeek 的 AI 聊天机器人" />
+      </Head>
+
+      <main className={styles.main}>
+        <h1 className={styles.title}>DeepSeek 聊天助手</h1>
+        <p className={styles.description}>
+          输入你的问题，AI 将为你回答。
+        </p>
+
+        <div className={styles.chatBox}>
+          <input
+            type="text"
+            placeholder="请输入问题..."
+            className={styles.input}
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') {
+                sendMessage(e.target.value);
+                e.target.value = '';
+              }
+            }}
+          />
+          <div id="messages" className={styles.messages}></div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+async function sendMessage(message) {
+  const response = await fetch('/api/hello', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ message }),
+  });
+
+  const data = await response.json();
+  const messages = document.getElementById('messages');
+  messages.innerHTML += `<div><strong>你：</strong> ${message}</div>`;
+  messages.innerHTML += `<div><strong>AI：</strong> ${data.reply}</div>`;
+}
+=======
 import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -37,28 +89,22 @@ export default function Home() {
           <div className={styles.intro}>
             <h1>To get started, edit the index.js file.</h1>
             <p>
-              Looking for a starting point or more instructions? Head over to{
-                " "
-              }
+              Looking for a starting point or more instructions? Head over to{" "}
               <a
                 href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Templates
-              </a>
-              {" "}
-              or the{
-                " "
-              }
+              </a>{" "}
+              or the{" "}
               <a
                 href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Learning
-              </a>
-              {" "}
+              </a>{" "}
               center.
             </p>
           </div>
@@ -92,3 +138,4 @@ export default function Home() {
     </>
   );
 }
+>>>>>>> eddf4776325f77fb5bf7106ec8203707d7325aff
