@@ -47,6 +47,58 @@
   gap: 1rem;
 }
 
+.fileUploadContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.fileInputLabel {
+  padding: 8px 12px;
+  background-color: #e3f2fd;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #1976d2;
+  transition: all 0.3s ease;
+}
+
+.fileInputLabel:hover {
+  background-color: #bbdefb;
+  border-color: #1976d2;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileName {
+  font-size: 0.9rem;
+  color: #333;
+  flex: 1;
+  min-width: 150px;
+  word-break: break-all;
+}
+
+.clearFileBtn {
+  padding: 6px 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.clearFileBtn:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}
+
 .input {
   width: 100%;
   padding: 12px 16px;
