@@ -2,31 +2,11 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  // 用于存储当前选择的文件
-  let selectedFile = null;
-
-  // 处理文件选择
-  const handleFileChange = (e) => {
-    selectedFile = e.target.files[0];
-    if (selectedFile) {
-      const fileNameDisplay = document.getElementById('fileName');
-      fileNameDisplay.textContent = selectedFile.name;
-    }
-  };
-
-  // 清除选择的文件
-  const clearFile = () => {
-    selectedFile = null;
-    document.getElementById('fileInput').value = '';
-    document.getElementById('fileName').textContent = '';
-  };
-
-  // 发送消息（支持文本和文件）
+  // 发送消息（仅支持文本）
   const handleSendMessage = (message) => {
-    sendMessage(message, selectedFile);
-    // 清除输入和选择的文件
+    sendMessage(message);
+    // 清除输入
     document.querySelector(`.${styles.input}`).value = '';
-    clearFile();
   };
 
   // 执行搜索
@@ -96,24 +76,7 @@ export default function Home() {
 
         <div className={styles.chatBox}>
           {/* 文件上传区域 */}
-          <div className={styles.fileUploadContainer}>
-            <label htmlFor="fileInput" className={styles.fileInputLabel}>
-              选择文件
-              <input
-                id="fileInput"
-                type="file"
-                className={styles.fileInput}
-                onChange={handleFileChange}
-              />
-            </label>
-            <span id="fileName" className={styles.fileName}></span>
-            <button 
-              className={styles.clearFileBtn}
-              onClick={clearFile}
-            >
-              清除
-            </button>
-          </div>
+          {/* 简化版界面 - 仅支持文本输入 */}
           
           {/* 文本输入区域和按钮 */}
           <div className={styles.inputContainer}>
@@ -161,50 +124,30 @@ export default function Home() {
   );
 }
 
-async function sendMessage(message, file = null, isSearchRelated = false) {
+async function sendMessage(message, isSearchRelated = false) {
   const messages = document.getElementById('messages');
   
   // 仅在非搜索相关消息时显示用户消息
-      if (!isSearchRelated) {
-        let userMessageHtml = `<div><strong>你：</strong> ${message}`;
-        if (file) {
-          userMessageHtml += ` <em>(上传了文件: ${file.name})</em>`;
-        }
-        userMessageHtml += `</div>`;
-        messages.innerHTML += userMessageHtml;
-      } else {
-        // 搜索相关消息时，显示系统消息
-        messages.innerHTML += `<div class="system-message">正在根据搜索结果生成回答...</div>`;
-      }
+  if (!isSearchRelated) {
+    let userMessageHtml = `<div><strong>你：</strong> ${message}</div>`;
+    messages.innerHTML += userMessageHtml;
+  } else {
+    // 搜索相关消息时，显示系统消息
+    messages.innerHTML += `<div class="system-message">正在根据搜索结果生成回答...</div>`;
+  }
   
   try {
-    // 根据是否有文件选择不同的请求方式
-    if (file) {
-      // 有文件时使用FormData
-      const formData = new FormData();
-      formData.append('message', message);
-      formData.append('file', file);
-      
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        body: formData,
-      });
-      
-      const data = await response.json();
-      messages.innerHTML += `<div><strong>AI：</strong> ${data.reply || '发生错误，请重试'}</div>`;
-    } else {
-      // 只有文本时使用JSON
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message }),
-      });
+    // 统一使用JSON格式发送请求
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ message }),
+    });
 
-      const data = await response.json();
-      messages.innerHTML += `<div><strong>AI：</strong> ${data.reply || '发生错误，请重试'}</div>`;
-    }
+    const data = await response.json();
+    messages.innerHTML += `<div><strong>AI：</strong> ${data.reply || '发生错误，请重试'}</div>`;
   } catch (error) {
     messages.innerHTML += `<div><strong>AI：</strong> 发送失败，请重试</div>`;
     console.error('发送消息失败:', error);
