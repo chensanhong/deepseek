@@ -1,29 +1,20 @@
-// functions/api/search.js
+// pages/api/search.js
 
-export const onRequest = async (context) => {
-
-  const { request } = context;
-
-  
-  if (request.method !== 'POST') {
-    return new Response(JSON.stringify({ error: '仅支持 POST 请求' }), {
-      status: 405,
-      headers: { 'Content-Type': 'application/json' },
-    });
+// 模拟搜索API，实际生产环境中可以使用真实的搜索引擎API
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: '仅支持 POST 请求' });
   }
-  
-  try {
-    const data = await request.json();
-    const { query } = data;
 
+  try {
+    const { query } = req.body;
+    
     if (!query || typeof query !== 'string') {
-      return new Response(JSON.stringify({ error: '需要提供有效的搜索查询' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      });
+      return res.status(400).json({ error: '需要提供有效的搜索查询' });
     }
 
-    // 模拟搜索结果（和你原来的一样）
+    // 模拟搜索结果，实际项目中可以调用百度搜索API或其他搜索引擎API
+    // 这里使用模拟数据展示功能
     const searchResults = [
       {
         title: `关于"${query}"的信息 - 示例搜索结果`,
@@ -42,22 +33,16 @@ export const onRequest = async (context) => {
       }
     ];
 
-    // 模拟延迟（可选，生产环境可删）
+    // 模拟网络延迟
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    return new Response(JSON.stringify({
+    res.status(200).json({
       query,
       results: searchResults,
       totalResults: searchResults.length
-    }), {
-      headers: { 'Content-Type': 'application/json' },
     });
-
   } catch (error) {
     console.error('搜索出错:', error);
-    return new Response(JSON.stringify({ error: '搜索服务异常' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    res.status(500).json({ error: '搜索服务异常' });
   }
-};
+}
