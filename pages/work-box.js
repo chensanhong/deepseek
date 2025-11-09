@@ -62,6 +62,30 @@ const WorkBox = () => {
       name: '360智图',
       url: 'https://pic.360.com/home',
       description: '在线图片编辑与处理工具，提供多种实用图片功能。'
+    },
+    {
+      id: 11,
+      name: '7-Zip',
+      url: 'https://www.7-zip.org/',
+      description: '高效压缩工具，支持多种压缩格式，提供高压缩比率。'
+    },
+    {
+      id: 12,
+      name: 'CPU虚拟化解决（三角洲与瓦）',
+      url: 'https://pan.baidu.com/s/1kE4Sy6xJe8JED6DsnPG8IA',
+      description: 'CPU虚拟化问题解决方案文档，提取码: 1111，帮助解决虚拟化相关问题。'
+    },
+    {
+      id: 13,
+      name: '放大镜（本地找文件）',
+      url: 'https://pan.baidu.com/s/1jZSMB5TAuNi8wamjof3LtQ',
+      description: '本地文件搜索工具，提取码: 1111，提高文件查找效率。'
+    },
+    {
+      id: 14,
+      name: '硬盘检测软件',
+      url: 'https://pan.baidu.com/s/1-Sh7k9ug6rKb4aRVWpIK1w',
+      description: '硬盘健康状况检测工具，提取码: 1111，帮助监控硬盘状态。'
     }
   ];
 
