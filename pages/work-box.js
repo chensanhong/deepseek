@@ -18,7 +18,7 @@ const WorkBox = () => {
     {
       id: 3,
       name: 'Anaconda',
-      url: 'www.anaconda.com/download/',
+      url: 'https://www.anaconda.com/download',
       description: '数据科学与机器学习平台，包含Python环境与常用库。'
     },
     {
