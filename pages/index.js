@@ -21,7 +21,7 @@ export default function Home() {
           gap: '20px', 
           marginBottom: '40px'
         }}>
-          {/* AI 聊天功能 */}
+          {/* AI 工具汇总 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -35,10 +35,12 @@ export default function Home() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>AI 聊天助手</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>使用 DeepSeek 模型的 AI 聊天功能，可以进行智能对话和信息查询。</p>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>AI工具汇总</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>各种AI工具的集合，提供智能对话、信息查询等多种功能。</p>
             <a 
-              href="/deepseek" 
+              href="https://chensanhong.top/AIinstrument" 
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: 'inline-block',
                 backgroundColor: '#0070f3',
@@ -51,7 +53,7 @@ export default function Home() {
               onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
               onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
             >
-              前往使用
+              详细信息
             </a>
           </div>
           
