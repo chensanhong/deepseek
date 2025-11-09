@@ -1425,7 +1425,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 腾讯云AI */}
+          {/* 腾讯元宝 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -1439,10 +1439,10 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>腾讯云AI</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>腾讯云AI服务平台，提供多种智能识别和分析能力</p>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>腾讯元宝</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>腾讯元宝AI助手，提供智能对话和内容创作服务</p>
             <a 
-              href="https://ai.qq.com/" 
+              href="https://yuanbao.tencent.com/" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
