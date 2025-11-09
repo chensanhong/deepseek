@@ -1,9 +1,93 @@
 // pages/index.js
 export default function Home() {
   return (
-    <div style={{ padding: '50px', textAlign: 'center' }}>
-      <h1>欢迎访问</h1>
-      <p>请前往 <a href="/deepseek">/deepseek</a> 使用 AI 聊天</p>
+    <div style={{ 
+      maxWidth: '900px', 
+      margin: '0 auto', 
+      padding: '50px 20px',
+      fontFamily: 'Arial, sans-serif'
+    }}>
+      <header style={{ textAlign: 'center', marginBottom: '50px' }}>
+        <h1 style={{ fontSize: '2.5rem', color: '#333', marginBottom: '10px' }}>chensanhong.top</h1>
+        <p style={{ fontSize: '1.1rem', color: '#666' }}>个人网站目录</p>
+      </header>
+      
+      <section>
+        <h2 style={{ fontSize: '1.8rem', color: '#333', borderBottom: '2px solid #f0f0f0', paddingBottom: '10px', marginBottom: '30px' }}>网站功能目录</h2>
+        
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', 
+          gap: '20px', 
+          marginBottom: '40px'
+        }}>
+          {/* AI 聊天功能 */}
+          <div style={{
+            backgroundColor: '#f8f9fa',
+            padding: '25px',
+            borderRadius: '10px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+            transition: 'transform 0.2s, box-shadow 0.2s'
+          }} onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-5px)';
+            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+          }} onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+          }}>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>AI 聊天助手</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>使用 DeepSeek 模型的 AI 聊天功能，可以进行智能对话和信息查询。</p>
+            <a 
+              href="/deepseek" 
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#0070f3',
+                color: 'white',
+                padding: '10px 15px',
+                borderRadius: '5px',
+                textDecoration: 'none',
+                fontWeight: 'bold'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
+            >
+              前往使用
+            </a>
+          </div>
+          
+          {/* 其他功能占位 */}
+          <div style={{
+            backgroundColor: '#f8f9fa',
+            padding: '25px',
+            borderRadius: '10px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+          }}>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>即将推出</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>更多功能正在开发中，敬请期待！</p>
+          </div>
+          
+          <div style={{
+            backgroundColor: '#f8f9fa',
+            padding: '25px',
+            borderRadius: '10px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+          }}>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>即将推出</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>更多功能正在开发中，敬请期待！</p>
+          </div>
+        </div>
+      </section>
+      
+      <footer style={{ 
+        marginTop: '60px', 
+        paddingTop: '20px', 
+        borderTop: '1px solid #eee', 
+        textAlign: 'center', 
+        color: '#888', 
+        fontSize: '0.9rem'
+      }}>
+        <p>© {new Date().getFullYear()} chensanhong.top - 个人网站</p>
+      </footer>
     </div>
   );
 }
