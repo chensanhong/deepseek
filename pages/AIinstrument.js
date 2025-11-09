@@ -93,7 +93,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 探索家 Deepseek */}
+          {/* deepseek */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -107,7 +107,7 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>探索家 Deepseek</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>deepseek</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>功能强大的AI探索工具，提供多样化的智能服务</p>
             <a 
               href="https://www.deepseek.com/" 
@@ -542,7 +542,7 @@ export default function AIInstrument() {
             <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>喜马拉雅AI小说</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>AI驱动的智能小说创作平台，提供个性化阅读体验</p>
             <a 
-              href="https://studio.ximalaya.com/" 
+              href="https://aigc.ximalaya.com/accreat" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -650,7 +650,7 @@ export default function AIInstrument() {
             <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>扣子</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>字节跳动AI对话平台，支持多种智能交互场景</p>
             <a 
-              href="https://www.wenxin.com/" 
+              href="https://www.coze.cn/" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -669,7 +669,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 影力田动子 */}
+          {/* 影刀 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -683,10 +683,10 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>影力田动子</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>影刀</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>提供创意视频制作功能，支持多种视频编辑效果</p>
             <a 
-              href="https://yingdao.core.cn/" 
+              href="https://www.yingdao.com/" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -777,7 +777,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 阿里云灵码 */}
+          {/* 通义灵码 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -791,7 +791,7 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>阿里云灵码</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>通义灵码</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>智能编程助手，提供代码生成和优化功能</p>
             <a 
               href="https://lingma.aliyun.com/lingma" 
@@ -813,7 +813,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 米可智谱 */}
+          {/* 米可智能 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -827,10 +827,10 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>米可智谱</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>米可智能</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>提供专业的AI智能服务，支持多种应用场景</p>
             <a 
-              href="https://sinaneko.co/zh/" 
+              href="https://minecho.com/zh" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -851,7 +851,7 @@ export default function AIInstrument() {
           
 
           
-          {/* 百度AI助手 */}
+          {/* 文心助手 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -865,7 +865,7 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>百度AI助手</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>文心助手</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>百度推出的智能对话助手，提供全方位AI服务</p>
             <a 
               href="https://chat.baidu.com/" 
@@ -1033,7 +1033,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 讯飞星火认知大模型 */}
+          {/* 讯飞星火 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -1047,7 +1047,7 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>讯飞星火认知大模型</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>讯飞星火</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>科大讯飞推出的认知智能大模型，支持多模态交互</p>
             <a 
               href="https://xinghuo.xfyun.cn/" 
@@ -1105,7 +1105,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 阿里通义千问 */}
+          {/* 通义 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -1119,8 +1119,8 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>阿里通义千问</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>阿里云推出的智能对话助手，支持多领域知识问答</p>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>通义</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>阿里云推出的智能对话助手，目前国内最强AI，支持多领域知识问答</p>
             <a 
               href="https://tongyi.aliyun.com/" 
               target="_blank"
@@ -1443,7 +1443,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 讯飞星火认知大模型 */}
+          {/* 讯飞星火 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
@@ -1457,7 +1457,7 @@ export default function AIInstrument() {
             e.currentTarget.style.transform = 'translateY(0)';
             e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>讯飞星火认知大模型</h3>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>讯飞星火</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>讯飞星火大模型，专注于多轮对话、知识问答和生成能力</p>
             <a 
               href="https://xinghuo.xfyun.cn/" 
@@ -1479,42 +1479,7 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 通义 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>通义</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>通义大模型，提供通用智能和行业解决方案</p>
-            <a 
-              href="https://tongyi.aliyun.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
+
           {/* 腾讯混元大模型 */}
           <div style={{
             backgroundColor: '#f8f9fa',

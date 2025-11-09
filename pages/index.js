@@ -57,15 +57,40 @@ export default function Home() {
             </a>
           </div>
           
-          {/* 其他功能占位 */}
+          {/* 工具箱 */}
           <div style={{
             backgroundColor: '#f8f9fa',
             padding: '25px',
             borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+            transition: 'transform 0.2s, box-shadow 0.2s'
+          }} onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-5px)';
+            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+          }} onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
           }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>即将推出</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>更多功能正在开发中，敬请期待！</p>
+            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>工具箱</h3>
+            <p style={{ color: '#666', marginBottom: '20px' }}>提供各种实用工具和资源，满足日常工作和学习需求。</p>
+            <a 
+              href="https://chensanhong.top/work-box" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#0070f3',
+                color: 'white',
+                padding: '10px 15px',
+                borderRadius: '5px',
+                textDecoration: 'none',
+                fontWeight: 'bold'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
+            >
+              前往了解
+            </a>
           </div>
           
           <div style={{
