@@ -213,3 +213,45 @@
 /* 已合并到上面的响应式设计中 */
 
 /* 已移除所有暗色模式相关样式 */
+
+/* 工具箱页面样式 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #0070f3;
+}
+
+.cardDescription {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
