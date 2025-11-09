@@ -8,8 +8,8 @@ export default function Home() {
       fontFamily: 'Arial, sans-serif'
     }}>
       <header style={{ textAlign: 'center', marginBottom: '50px' }}>
-        <h1 style={{ fontSize: '2.5rem', color: '#333', marginBottom: '10px' }}>chensanhong.top</h1>
-        <p style={{ fontSize: '1.1rem', color: '#666' }}>个人网站目录</p>
+        <h1 style={{ fontSize: '2.5rem', color: '#333', marginBottom: '10px' }}>みなさんこんにちは</h1>
+        <p style={{ fontSize: '1.1rem', color: '#666' }}>欢迎来到散虹的网页</p>
       </header>
       
       <section>
