@@ -273,42 +273,6 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* sora2（网页版） */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>sora2（网页版）</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>先进的AI视频生成工具，可创建高质量视频内容</p>
-            <a 
-              href="https://sora.chatgpt.com/explore" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
           {/* 夸克 */}
           <div style={{
             backgroundColor: '#f8f9fa',
@@ -507,42 +471,6 @@ export default function AIInstrument() {
             <p style={{ color: '#666', marginBottom: '20px' }}>全自动视频翻译和配音工具，支持多语言转换</p>
             <a 
               href="https://cj.jollytoday.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
-          {/* 腾讯云语音合成 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>腾讯云语音合成</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>提供高质量的语音合成服务，支持多种音色选择</p>
-            <a 
-              href="https://cloud.tencent.com/product/tts" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -961,42 +889,6 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* Midjourney */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>Midjourney</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>强大的AI图像生成工具，支持创建高质量艺术作品</p>
-            <a 
-              href="https://app.midjourney.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
           {/* Claude */}
           <div style={{
             backgroundColor: '#f8f9fa',
@@ -1141,78 +1033,6 @@ export default function AIInstrument() {
             </a>
           </div>
           
-          {/* 通义 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>通义</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>阿里云推出的智能对话助手，目前国内最强AI，支持多领域知识问答</p>
-            <a 
-              href="https://tongyi.aliyun.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
-          {/* 文心一言 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>文心一言</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>百度推出的智能对话助手，支持多模态交互</p>
-            <a 
-              href="https://yiyan.baidu.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
           {/* 智谱AI */}
           <div style={{
             backgroundColor: '#f8f9fa',
@@ -1267,78 +1087,6 @@ export default function AIInstrument() {
             <p style={{ color: '#666', marginBottom: '20px' }}>专注于人工智能基础研究和技术创新</p>
             <a 
               href="https://www.baai.ac.cn/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
-          {/* 百度千帆大模型平台 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>百度千帆大模型平台</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>百度大模型服务平台，提供模型调用和应用开发</p>
-            <a 
-              href="https://qianfan.baidu.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
-          {/* 百度智能云 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>百度智能云</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>百度云服务平台，提供AI、云计算等多种服务</p>
-            <a 
-              href="https://cloud.baidu.com/" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -1461,42 +1209,6 @@ export default function AIInstrument() {
             <p style={{ color: '#666', marginBottom: '20px' }}>火山引擎是字节跳动旗下AI云平台，提供丰富的AI模型和服务</p>
             <a 
               href="https://www.volcengine.com/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#0070f3',
-                color: 'white',
-                padding: '10px 15px',
-                borderRadius: '5px',
-                textDecoration: 'none',
-                fontWeight: 'bold'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0051bb'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0070f3'}
-            >
-              前往使用
-            </a>
-          </div>
-          
-          {/* 讯飞星火 */}
-          <div style={{
-            backgroundColor: '#f8f9fa',
-            padding: '25px',
-            borderRadius: '10px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
-            transition: 'transform 0.2s, box-shadow 0.2s'
-          }} onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-5px)';
-            e.currentTarget.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-          }} onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
-          }}>
-            <h3 style={{ fontSize: '1.3rem', color: '#333', marginBottom: '10px' }}>讯飞星火</h3>
-            <p style={{ color: '#666', marginBottom: '20px' }}>讯飞星火大模型，专注于多轮对话、知识问答和生成能力</p>
-            <a 
-              href="https://xinghuo.xfyun.cn/" 
               target="_blank"
               rel="noopener noreferrer"
               style={{
